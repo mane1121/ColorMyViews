@@ -44,6 +44,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun makeColored(view: View) {
+        val box_three_text = findViewById<TextView>(R.id.box_three_text)
+        val box_four_text = findViewById<TextView>(R.id.box_four_text)
+        val box_five_text = findViewById<TextView>(R.id.box_five_text)
         when (view.id) {
             // Boxes using Color class colors for the background
             id.box_one_text -> view.setBackgroundColor(Color.DKGRAY)
@@ -53,7 +56,7 @@ class MainActivity : AppCompatActivity() {
             id.box_four_text -> view.setBackgroundColor(Color.MAGENTA)
             id.box_five_text -> view.setBackgroundColor(Color.BLUE)
             // Boxes using custom colors for background
-            id.red_button -> box_three_text.setBaackgroundResource(R.color.my_red)
+            id.red_button -> box_three_text.setBackgroundResource(R.color.my_red)
             id.yellow_button -> box_four_text.setBackgroundResource(R.color.my_yellow)
             id.green_button -> box_five_text.setBackgroundResource(R.color.my_green)
             else -> view.setBackgroundColor(Color.LTGRAY)
